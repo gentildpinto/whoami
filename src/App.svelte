@@ -6,7 +6,7 @@
 	<h1>Hello {name}!</h1>
 </main>
 
-<style type="text/scss">
+<style lang="scss">
 	main {
 		text-align: center;
 		padding: 1em;
