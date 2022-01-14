@@ -6,7 +6,7 @@
     import '../app.css'
   
     onMount(async () => {
-      themeChange(false)
+        themeChange(false)
     })
 </script>
   
