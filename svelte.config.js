@@ -7,10 +7,26 @@ const config = {
 		adapter: adapter(),
 
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		target: '#svelte',
+
+		vite: {
+			css: {
+				preprocessorOptions: {
+					scss: {
+						additionalData: '@use "src/variables.scss" as *;'
+					}
+				}
+			}
+		}
 	},
 
-	preprocess: [preprocess({})]
+	preprocess: [
+		preprocess({
+			scss: {
+				prependData: '@use "src/variables.scss" as *;'
+			}
+		})
+	]
 };
 
 export default config;
