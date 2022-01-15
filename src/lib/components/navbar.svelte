@@ -45,7 +45,7 @@
 	});
 </script>
 
-<div class="navbar mb-16 {theme !== 'light' ? 'text-neutral-focus' : 'text-neutral-content'} sticky top-0 z-10">
+<div class="navbar mb-16 text-sm sticky top-0 z-10 px-32">
 	<div class="flex-1 px-2 mx-2">
 		<a class="text-lg font-bold" href="/"> Gentil Pinto </a>
 		&nbsp;
@@ -75,6 +75,3 @@
 		</div>
 	</div>
 </div>
-
-<style lang="scss">
-</style>
