@@ -51,7 +51,9 @@ export const socialQuery = gql`
         socials {
             socialName
             socialUrl
-            mediaSvg
+            svgImage {
+                url
+            }
         }
     }
 `;

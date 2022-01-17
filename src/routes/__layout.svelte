@@ -1,3 +1,22 @@
+<script context="module">
+	import { client } from '$lib/graphql-client';
+	import { socialQuery } from '$lib/graphql-queries';
+
+	export const load = async () => {
+        const [socialReq] = await Promise.all([
+			await client.request(socialQuery)
+		]);
+        
+		const { socials } = socialReq;
+
+		return {
+			props: {
+				socials
+			}
+		};
+	};
+</script>
+
 <script>
 	import Footer from '$lib/components/footer.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
@@ -9,11 +28,13 @@
 	onMount(async () => {
 		themeChange(false);
 	});
+
+    export let socials;
 </script>
 
 <Navbar />
-<Sidebar />
-<main class="container max-w-3xl mx-auto px-4 mb-20">
+<Sidebar {socials} />
+<main class="">
     <slot />
 </main>
 <Footer />
