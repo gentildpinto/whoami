@@ -45,3 +45,13 @@ export const projectQuery = gql`
 		}
 	}
 `;
+
+export const socialQuery = gql`
+    query GetSocials {
+        socials {
+            socialName
+            socialUrl
+            mediaSvg
+        }
+    }
+`;
