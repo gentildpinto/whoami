@@ -34,7 +34,7 @@
 
 <Navbar />
 <Sidebar {socials} />
-<main class="">
+<main class="h-screen w-screen">
     <slot />
 </main>
 <Footer />
