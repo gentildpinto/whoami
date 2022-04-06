@@ -18,9 +18,9 @@
         </ul>
     </div>
 
-    <div class="pt-60">
-        <h1 class="text-3xl mb-4 font-bold tracking-wider">Hey there. I'm {name}</h1>
-        <h2 class="text-xl mb-4">I’m a software developer</h2>
+    <div class="pt-60 text-center">
+        <h1 class="text-6xl mb-2 font-bold tracking-wider">Hey there. I'm {name}</h1>
+        <h2 class="text-5xl mb-12">I’m a software developer</h2>
         <p class="text-xl mb-4">{@html intro}</p>
     </div>
 </div>
